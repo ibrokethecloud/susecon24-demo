@@ -31,6 +31,7 @@ locals  {
     dhcp_conf = <<EOF
 default-lease-time 600;
 max-lease-time 3600;
+option domain-name-servers 8.8.8.8, 8.8.4.4;
 
 %{ for block in metal_reserved_ip_block.ip_block }
 subnet ${block.network} netmask ${block.netmask} {
