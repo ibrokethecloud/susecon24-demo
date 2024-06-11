@@ -8,8 +8,8 @@ os:
   hostname: "${hostname_prefix}-${count}"
 install:
   mode: create
-  device: /dev/sda
-  iso_url: https://releases.rancher.com/harvester/${version}/harvester-${version}-amd64.iso
+  device: /dev/nvme2n1
+  iso_url: https://releases.rancher.com/harvester/${version}/harvester-${version}-arm64.iso
   tty: ttyS1,115200n8
   vip: ${vip}
   vip_mode: static

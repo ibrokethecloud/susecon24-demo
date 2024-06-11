@@ -3,7 +3,7 @@ variable "harvester_version" {
 }
 
 variable "node_count" {
-  default = "3"
+  default = "1"
 }
 
 variable "project_name" {
@@ -11,7 +11,7 @@ variable "project_name" {
 }
 
 variable "plan" {
-  default = "c3.small.x86"
+  default = "c3.large.arm64"
 }
 
 variable "billing_cylce" {
@@ -23,11 +23,11 @@ variable "metro" {
 }
 
 variable "ipxe_script" {
-  default = "https://raw.githubusercontent.com/ibrokethecloud/susecon24-demo/main/harvester-amd64/ipxe/ipxe-"
+  default = "https://raw.githubusercontent.com/ibrokethecloud/susecon24-demo/main/harvester-arm64/ipxe/ipxe-"
 }
 
 variable "hostname_prefix" {
-  default = "harvester-amd64"
+  default = "harvester-arm64"
 }
 
 variable "ssh_key" {

@@ -49,5 +49,5 @@ variable "public_ip_block_size" {
 
 // one of the supported operating systemshttps://deploy.equinix.com/developers/docs/metal/operating-systems/supported/
 variable operating_system {
-  default = "ubuntu_22_04"
+  default = "ubuntu_24_04"
 }
