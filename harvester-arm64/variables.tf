@@ -19,7 +19,7 @@ variable "billing_cylce" {
 }
 
 variable "metro" {
-  default = "SG"
+  default = "DC"
 }
 
 variable "ipxe_script" {
