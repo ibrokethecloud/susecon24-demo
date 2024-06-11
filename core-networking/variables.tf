@@ -16,11 +16,7 @@ variable "billing_cylce" {
 
 // equinix metal metro where the infra will be provisioned
 variable "metro" {
-  default = "SG"
-}
-
-variable "facility" {
-  default = "sg1"
+  default = "DC"
 }
 
 // hostname_prefix defines the prefix for the DHCP server provisioned in equinix metal

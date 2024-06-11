@@ -3,7 +3,7 @@ variable "harvester_version" {
 }
 
 variable "node_count" {
-  default = "1"
+  default = "3"
 }
 
 variable "project_name" {
