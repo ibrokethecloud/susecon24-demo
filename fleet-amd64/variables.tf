@@ -3,7 +3,7 @@ variable "harvester_version" {
 }
 
 variable "node_count" {
-  default = "3"
+  default = "1"
 }
 
 variable "project_name" {
@@ -27,7 +27,7 @@ variable "ipxe_script" {
 }
 
 variable "hostname_prefix" {
-  default = "harvester-amd64"
+  default = "fleet-harvester-amd64"
 }
 
 variable "ssh_key" {
