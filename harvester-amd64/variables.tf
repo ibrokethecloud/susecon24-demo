@@ -1,5 +1,5 @@
 variable "harvester_version" {
-  default = "v1.3.0"
+  default = "v1.3.1"
 }
 
 variable "node_count" {
