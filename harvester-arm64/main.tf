@@ -36,12 +36,12 @@ resource "equinix_metal_ip_attachment" "first_address_assignment_primary_cluster
 }
 
 // setup hybrid bonded network mode and attach to vlan for seed node
-resource "equinix_metal_port_vlan_attachment" "vlan_attach_seed" {
+/*resource "equinix_metal_port_vlan_attachment" "vlan_attach_seed" {
   count     = var.node_count >= 1 ? 1 : 0
   device_id = equinix_metal_device.seed.0.id
   vlan_vnid = var.vlan_id
   port_name = "bond0"
-}
+}*/
 
 resource "equinix_metal_device" "join" {
   hostname         = "${var.hostname_prefix}-${count.index + 2}"

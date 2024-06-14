@@ -3,7 +3,7 @@ variable "harvester_version" {
 }
 
 variable "node_count" {
-  default = "3"
+  default = "1"
 }
 
 variable "project_name" {
@@ -23,7 +23,8 @@ variable "metro" {
 }
 
 variable "ipxe_script" {
-  default = "https://raw.githubusercontent.com/ibrokethecloud/susecon24-demo/main/harvester-arm64/ipxe/ipxe-"
+  default = "https://raw.githubusercontent.com/ibrokethecloud/susecon24-demo/dev/harvester-arm64/ipxe/ipxe-"
+  
 }
 
 variable "hostname_prefix" {
